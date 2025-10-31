@@ -1,20 +1,38 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+#  **Mistborn Boost**
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1mNMEzXrnPvvnys9FHsufucvODCqOE6bH
-
-## Run Locally
-
-**Prerequisites:**  Node.js
+**Mistborn Boost** is a **single-player strategy card game** prototype inspired by the emotional Allomancy system from Brandon Sanderson’s *Mistborn* series.
+The project explores **emotion-driven decision-making** through a combination of **state-based logic, dynamic gameplay flow, and probabilistic decision mechanics**.
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🧩 **Overview**
+The player competes against **three noble NPCs** at a virtual table.
+Each round involves **card passing**, but outcomes are dynamically influenced by **emotional states** manipulated through Allomantic actions.
+
+### 🎯 Objective
+Collect **four identical Shard cards** (*Preservation*, *Ruin*, *Odium*, or *Endowment*).
+
+### 🔁 Core Mechanics
+* **Card Passing:**
+  Each round, all players pass one card clockwise.
+* **Emotion System:**
+  NPCs maintain an *influence meter* that affects card decisions.
+* **Allomantic Actions:**
+
+  * **Soothe (Brass):** Decrease influence, increase rational behaviour.
+  * **Riot (Zinc):** Increase influence, promote erratic behaviour.
+
+NPC logic integrates emotional weighting to simulate human unpredictability.
+
+## 🕹️ **Gameplay Flow**
+
+1. Player selects a card to pass.
+2. NPCs execute their turns sequentially.
+3. Player may use **Soothe** or **Riot** (costs one metal charge).
+4. Influence states update dynamically.
+5. Game ends when any participant collects four identical Shards.
+
+## 👥 **Credits**
+* **Inspired by:** *Mistborn* series by **Brandon Sanderson**
+* **All intellectual property rights** to Mistborn and Allomancy belong to **Dragonsteel Entertainment**.
+* This is a **non-commercial fan project**, created purely for learning and creative exploration.
